@@ -576,6 +576,71 @@
         color: var(--vintage-dark);
         transform: translateY(-5px);
       }
+
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 3rem;
+          letter-spacing: 3px;
+        }
+        .hero-content h1::before,
+        .hero-content h1::after {
+          display: inline;
+        }
+        .hero-content p {
+          font-size: 1.2rem;
+        }
+        .section-title {
+          font-size: 2.8rem;
+        }
+        .about-content {
+          flex-direction: column;
+          text-align: center;
+        }
+        .about-image {
+          order: -1;
+          margin-bottom: 30px;
+        }
+        .navbar-nav {
+          text-align: center;
+        }
+        .navbar-nav .nav-link {
+          margin: 5px 0;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-section {
+          min-height: 80vh;
+        }
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+        .hero-content p {
+          font-size: 1.1rem;
+        }
+        .btn-vintage {
+          padding: 12px 28px;
+          font-size: 0.9rem;
+          margin: 8px;
+          display: block;
+          width: 80%;
+          max-width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .section-title {
+          font-size: 2.4rem;
+        }
+        .theme-toggle,
+        .back-to-top {
+          width: 45px;
+          height: 45px;
+          font-size: 1.2rem;
+        }
+        .contact-form {
+          padding: 30px 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -588,9 +653,9 @@
       </div>
     </div>
 
-    <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <!-- <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
       <i class="bi bi-moon-stars-fill"></i>
-    </div>
+    </div> -->
 
     <div class="back-to-top" id="backToTop" aria-label="Back to top">
       <i class="bi bi-arrow-up"></i>
